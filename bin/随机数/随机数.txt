@@ -1,0 +1,21 @@
+随机数：随机地生成的任意的一个数（理论上讲具有不可预知性）。
+Random类：
+ThreadLoocalRandom类：
+UUID类：
+----------------------------------
+Random类用于生产一个伪随机数（通过相同的种子，产生的随机数是相同的）。
+public Random():使用默认的种子（以当前系统时间作为种子）。
+public Random(long seed):根据指定的种子。
+-----------------------------------
+ThreadLocalRandom是Java7新增类，是Random类的子类，在多线程并发情况下，ThreadLocalRandom相对于Random可以减少
+多线程资源竞争，保证了线程的安全性。public class ThreadLocalRandom extends Random {
+因为构造器是默认访问权限，只能在java.util包中创建对象，故，提供了一个方法ThreadLocalRandom.current()用于返回当前类对象。
+ThreadLocalRandom random = ThreadLocalRandom.current();
+System.out.println(random.nextInt(12,123));//[12,123)之间的随机数
+
+UUID:通过唯一识别：Universally Unique identifier;在一台机器上生成的数字，它保证对在同一时空中的所有机器都是唯一的。
+
+UUID是一个128位长的数字，一般用16进制表示。算法的核心思想是结合机器的网卡、当地时间、一个随机数来生成UUID。
+我们一般用来表示：随机的唯一的字符串。
+String uuid = UUID.randomUUID().toString();
+System.out.println(uuid);
