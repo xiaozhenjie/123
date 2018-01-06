@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
 
-kind�����/����
-	kindֵ��
-		src��	 Դ�ļ�Ŀ¼�������͵�Ŀ¼���ļ��ᱻ�Զ����뵽���Ŀ¼��
-		con�� 	 ���ӣ� ����jre
-		lib�� 	 �⣺ �Լ������jar
-		output��   ���������֮�󣬲������ļ����ֽ����ļ���
-		classpath·��
-	path��·��/λ��
+kind：类别/类型
+	kind值：
+		src：	 源文件目录：该类型的目录的文件会被自动编译到输出目录。
+		con： 	 连接： 关联jre
+		lib： 	 库： 自己导入的jar
+		output：   输出：编译之后，产生的文件（字节码文件）
+		classpath路径
+	path：路径/位置
 	
 		
